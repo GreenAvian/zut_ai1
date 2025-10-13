@@ -1,0 +1,178 @@
+body, main { 
+    /* height : 100vh; */
+    width: 100vw;
+    color: #eaeaea;
+    font-size: 2vh;
+
+}
+
+p {
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 5.9vh;
+}
+
+h2 {
+    font-size: 3.0vh;
+}
+
+h3 {
+    font-size: 2.6vh;
+}
+
+#main_header {
+    display: flex;
+    background: #27FB6B;
+    height: 20vh - 40px;
+    width: 100%;
+    padding : 20px;
+}
+
+#title_head
+{
+    flex:1;
+    margin:auto;
+}
+
+#title_sub {
+    flex:1;
+    font-style: italic;
+    margin:auto;
+}
+
+#mid_wrapper {
+    /* min-height: 70vh; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+}
+
+#side_menu {
+    /* display: inline-block; */
+    flex: 0 0 300px;
+    background: #14CC60;
+    align-self: stretch;
+    max-width: 30%;
+    padding: 0 20px 0 20px;
+}
+
+ul {
+    padding: 0%;
+}
+
+#side_menu li {
+    list-style-type: none ;
+    padding-left: 15px;
+    /* margin: 0 20px 0 20px; */
+}
+
+.menu_list:hover {
+    background: #036D19;
+}
+
+.div_item {
+    border-bottom: 3px solid #eaeaea;
+}
+
+#main_contents {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: #F5F5F5;
+}
+
+.travel_box {
+    background: #036D19;
+    margin: 0 0 0 20px;
+    padding: 15px;
+}
+
+.travel_box_head {
+    margin-top: 2px;
+}
+
+
+#lower_contents
+{
+    color:black;
+    flex-basis:100%;
+    display:flex;
+    align-items: flex-start;
+    margin: 20px 0 0 0;
+    
+}
+
+#leftmost {
+    flex: 1;
+
+}
+
+#rightmost {
+    flex: 1;
+    display: flex;
+}
+
+#rightmost img {
+    width:300px;
+    margin:10px;
+    border: dashed 5px green;
+}
+
+#main_footer {
+    background: #0A2E36;
+    height: 10vh-30px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1440px) { /*monitors*/
+    .travel_box {
+        /* display: inline-block; */
+        flex: 1;
+        width: 40%;
+        height: 80%;
+    }
+    
+    #rightmost p
+    {
+        margin:auto;
+    }
+
+}
+
+@media screen and (max-width: 1439px) { /*phones*/
+    #side_menu {
+        max-width: 15vh;
+    }
+    
+    #main_contents {
+        flex-direction: column;
+    }
+    
+    .travel_box {
+        flex: 1;
+        max-width: 22vh;
+        height: 40%;
+        margin-top: 40px;
+    }
+
+    #lower_contents
+    {
+        flex-direction: column;
+        max-width: 30vh;
+    }
+
+    #rightmost {
+        flex-direction: column;
+    }
+
+    #rightmost img {
+        max-width: 20vh;
+    }
+    
+}
