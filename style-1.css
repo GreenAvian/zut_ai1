@@ -1,0 +1,111 @@
+body, main { /* temp */
+    height : 100vh;
+    width: 100vw;
+    color: #eaeaea;
+    font-size: 20px;
+
+}
+
+h1 {
+    font-size: 5.9vh;
+}
+
+h2 {
+    font-size: 3.0vh;
+}
+
+h3 {
+    font-size: 2.6vh;
+}
+
+#main_wrapper {
+    height : 100%;
+    width : 100%;
+}
+
+#main_header {
+    background: #27FB6B;
+    height: 20vh - 40px;
+    width: 100%;
+    padding : 20px
+
+}
+
+#content_wrapper {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+#side_menu {
+    /* display: inline-block; */
+    flex: 0 0 320px;
+    background: #14CC60;
+    height: 100%;
+    max-width: 30%;
+    padding: 0 20px 0 20px;
+}
+
+ul {
+    padding: 0%;
+}
+
+.menu_list {
+    list-style-type: none ;
+    padding-left: 15px;
+    /* margin: 0 20px 0 20px; */
+}
+
+.menu_list p{
+    display: inline;
+}
+
+.div_item {
+    border-bottom: 3px solid #eaeaea;
+}
+
+#main_storefront {
+    /* display: inline-block; */
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    background: #F5F5F5;
+}
+
+.product_list {
+    background: #036D19;
+    margin: 20px;
+    padding: 15px;
+}
+
+.prod_list_head {
+    margin-top: 2px;
+}
+
+@media screen and (min-width: 1440px) { /*monitors*/
+    .product_list {
+        display: inline-block;
+        width: 40%;
+        height: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) { /*phones*/
+    .product_list {
+        display: block;
+        min-width: 40%;
+        height: 40%;
+        margin-top: 40px;
+    }
+
+}
+
+#main_footer {
+    background: #0A2E36;
+    height: 10vh-30px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
