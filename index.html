@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+        <script src="leaflet-1.7.1/leaflet-src.js"></script>
+        <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+        <script src="leaflet-1.7.1/leaflet-image.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map puzzle</title>        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main>
+            <div id="test_box">
+                <button id="get_location">Test location</button>
+                <button id="save_map_img">Save map raster</button>
+            
+            </div>
+
+            <div id = "main_wrapper">
+                <div class="gridbox" id="map_active"></div>
+                <canvas class="gridbox" width="660" height="660" id="map_img"></canvas>
+                <div class="gridbox" id="puzzle_pieces">
+                    <div class="slot_wrapper" id="s_puzzle_wrapper">                            
+                        <!-- <canvas class="puzzle_slot" draggable="true" id="s_puzzle_1">1</canvas>
+                        <canvas class="puzzle_slot" draggable="true" id="s_puzzle_2">2</canvas>
+                        <canvas class="puzzle_slot" draggable="true" id="s_puzzle_3">3</canvas>
+                        <canvas class="puzzle_slot" draggable="true" id="s_puzzle_4">4</canvas> -->
+                    </div>
+                </div>
+                <div class="gridbox" id="puzzle_board">
+                    <div class="slot_wrapper" id="d_puzzle_wrapper">                            
+                        <!-- <div class="puzzle_slot" id="s_puzzle_1">1</div>
+                        <div class="puzzle_slot" id="s_puzzle_2">2</div>
+                        <div class="puzzle_slot" id="s_puzzle_3">3</div>
+                        <div class="puzzle_slot" id="s_puzzle_4">4</div> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </body>
+
+</html>
