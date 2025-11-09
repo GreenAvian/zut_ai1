@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pogoda - Rest framework</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div id="weather_form">
+    <h1>Pogoda</h1>
+    <input type="text" value="Szczecin, Poland" placeholder="City, Country" id="locationInput">
+    <button id="currentGet">Dzisiaj</button>
+    <button id="forecastGet">Następne 5 dni</button>
+</div>
+
+<div id="weather_wrapper">
+    <h1>Dzisiaj</h1>
+    <div class="weather_results_wrapper" id="current_results"></div>
+    <h1>Prognoza</h1>
+    <div class="weather_results_wrapper" id="forecast_results"></div>
+    <!-- <div class="weather_result_box">
+        <img class="leftside_icon" src="https://openweathermap.org/img/wn/04d@2x.png" alt="zachmurzenie duże">
+        <h2 class="weather_result_header">09 lis, 16:00</h2>
+        <div class="weather_result_rightside wrapper">
+            <h2 class="weather_result_temp">8°C</h2>
+            <p class="weather_result_temp">Feel: 8°C
+                <br>zachmurzenie duże</p>
+        </div>
+    </div> -->
+</div>
+
+</body>
+</html>

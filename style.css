@@ -1,0 +1,29 @@
+body
+{
+    background: #9dff90;
+}
+
+#weather_form {
+    width: 350px;
+}
+
+.weather_results_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    border-bottom:2px solid black;
+}
+
+.weather_result_box
+{
+    background: #2b8d30;
+    margin: 0 20px 20px 20px;
+    padding: 0 20px 0 20px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.weather_result_header
+{
+    margin: 0 0 0 0;
+}
